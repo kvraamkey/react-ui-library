@@ -1,0 +1,24 @@
+{
+	"name": "react-ui-library",
+	"version": "1.0.0",
+	"description": "ui component for react",
+	"author": "Ramki A <kvraamkeydev@gmail.com>",
+	"license": "MIT",
+	"maintainers": [
+		"Ramki A <kvraamkeydev@gmail.com>"
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "git@github.com:kvraamkey/react-ui-library.git"
+		}
+	],
+	"main": "index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": []
+}
