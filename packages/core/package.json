@@ -29,8 +29,8 @@
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
     },
     "devDependencies": {
-        "@kvraamkey/tsconfig": "workspace:*",
         "@kvraamkey/eslint-config-custom": "workspace:*",
+        "@kvraamkey/tsconfig": "workspace:*",
         "@types/react": "^18.0.9",
         "@types/react-dom": "^18.0.4",
         "eslint": "^8.15.0",
@@ -39,7 +39,10 @@
         "typescript": "^4.5.3"
     },
     "peerDependencies": {
-        "react": ">=18",
-        "framer-motion": ">=4.0.0"
+        "framer-motion": ">=4.0.0",
+        "react": ">=18"
+    },
+    "dependencies": {
+        "tailwind-variants": "^0.1.13"
     }
 }
