@@ -1,13 +1,13 @@
-import { Navigate, createHashRouter } from "react-router-dom";
-import AppLayout, { AppComponentRender } from "./layout";
+import { Navigate, createHashRouter } from 'react-router-dom';
+import AppLayout, { AppComponentRender } from './layout';
 
 const router = createHashRouter([
     {
-        path: "/",
+        path: '/',
         element: <AppLayout />,
         children: [
             {
-                path: ":component",
+                path: ':component',
                 element: <AppComponentRender />,
             },
             {
@@ -18,4 +18,4 @@ const router = createHashRouter([
     },
 ]);
 
-export default router
+export default router;
