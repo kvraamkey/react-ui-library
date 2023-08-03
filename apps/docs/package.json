@@ -1,28 +1,29 @@
 {
-	"name": "docs",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"lint": "eslint \"src/**/*.ts\""
-	},
-	"dependencies": {
-		"@kvraamkey/core": "workspace:*",
-		"react": "^18.1.0",
-		"react-dom": "^18.2.0"
-	},
-	"devDependencies": {
-		"@kvraamkey/eslint-config-custom": "workspace:*",
-		"@kvraamkey/tsconfig": "workspace:*",
-		"@vitejs/plugin-react": "^4.0.4",
-		"autoprefixer": "^10.4.14",
-		"eslint": "^7.32.0",
-		"postcss": "^8.4.27",
-		"tailwindcss": "^3.3.3",
-		"typescript": "^4.9.4",
-		"vite": "^4.4.8"
-	}
+    "name": "docs",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "lint": "eslint \"src/**/*.ts\""
+    },
+    "dependencies": {
+        "@kvraamkey/core": "workspace:*",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.14.2"
+    },
+    "devDependencies": {
+        "@kvraamkey/eslint-config-custom": "workspace:*",
+        "@kvraamkey/tsconfig": "workspace:*",
+        "@vitejs/plugin-react": "^4.0.4",
+        "autoprefixer": "^10.4.14",
+        "eslint": "^7.32.0",
+        "postcss": "^8.4.27",
+        "tailwindcss": "^3.3.3",
+        "typescript": "^4.9.4",
+        "vite": "^4.4.8"
+    }
 }

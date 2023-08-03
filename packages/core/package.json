@@ -3,28 +3,20 @@
     "version": "0.0.0",
     "description": "🚀 Beautiful and modern React UI library.",
     "author": "Ramki A <kvraamkeydev@gmail.com>",
-    "keywords": [
-        "next",
-        "next ui",
-        "components",
-        "modern components",
-        "react components",
-        "react ui"
-    ],
-    "main": "src/index.ts",
+    "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "sideEffects": false,
+    "license": "MIT",
     "files": [
         "dist/**"
     ],
     "publishConfig": {
         "access": "public"
     },
-    "license": "MIT",
     "scripts": {
-        "build": "tsup src --dts",
-        "dev": "tsup src -- --watch",
+        "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+        "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
         "lint": "eslint \"src/**/*.ts*\"",
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
     },
@@ -34,7 +26,7 @@
         "@types/react": "^18.0.9",
         "@types/react-dom": "^18.0.4",
         "eslint": "^8.15.0",
-        "react": "^18.1.0",
+        "react": "^18.2.0",
         "tsup": "^5.10.1",
         "typescript": "^4.5.3"
     },
@@ -43,6 +35,7 @@
         "react": ">=18"
     },
     "dependencies": {
+        "react-aria": "^3.26.0",
         "tailwind-variants": "^0.1.13"
     }
 }
