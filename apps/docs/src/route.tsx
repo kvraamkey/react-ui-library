@@ -1,5 +1,5 @@
 import { Navigate, createHashRouter } from 'react-router-dom';
-import AppLayout, { AppComponentRender } from './layout';
+import AppLayout, { AppComponentRender } from '~/layout';
 
 const router = createHashRouter([
     {

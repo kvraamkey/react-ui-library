@@ -1,8 +1,8 @@
 import React from 'react';
-
-import { navigations } from '../config';
-import * as components from './../components';
 import { NavLink, Outlet, useParams } from 'react-router-dom';
+
+import { navigations } from '~/config';
+import * as components from '~/components';
 
 function titleCase(str: string) {
     return str

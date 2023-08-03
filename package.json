@@ -5,11 +5,14 @@
         "dev": "turbo run dev --no-daemon",
         "lint": "turbo run lint",
         "clean": "turbo run clean && rm -rf node_modules",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "predeploy": "pnpm run build --filter=docs",
+        "deploy": "gh-pages -d apps/docs/dist"
     },
     "devDependencies": {
         "@kvraamkey/eslint-config-custom": "workspace:*",
         "eslint": "^8.29.0",
+        "gh-pages": "^5.0.0",
         "prettier": "^2.8.0",
         "turbo": "^1.10.12"
     }

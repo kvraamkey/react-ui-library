@@ -1,4 +1,10 @@
 {
-	"extends": "@kvraamkey/tsconfig/vite.json",
-	"include": ["src"]
+    "extends": "@kvraamkey/tsconfig/vite.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["src/*"]
+        }
+    },
+    "include": ["src"]
 }
