@@ -11,7 +11,7 @@ export const navigations = [
         ],
     },
     {
-        title: 'Layout',
+        title: 'Components',
         menus: [
             { name: 'AspectRatio', link: 'aspect-ratio' },
             { name: 'Box', link: 'box' },
@@ -19,10 +19,7 @@ export const navigations = [
             { name: 'Stack', link: 'stack' },
             { name: 'Grid', link: 'grid' },
             { name: 'Loader', link: 'loader' },
+            { name: 'Button', link: 'button' },
         ],
-    },
-    {
-        title: 'Forms',
-        menus: [{ name: 'Button', link: 'button' }],
     },
 ];
