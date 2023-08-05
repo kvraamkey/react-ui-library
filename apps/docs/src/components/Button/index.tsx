@@ -4,7 +4,7 @@ export default () => {
     return (
         <>
             <h4>Button Variations</h4>
-            <Button>Button</Button>
+            <Button onPress={() => console.log('Button Cliked')}>Button</Button>
         </>
     );
 };

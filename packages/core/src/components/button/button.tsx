@@ -25,6 +25,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => 
 
     let { buttonProps } = useButton(props, domRef);
     const styles = React.useMemo(() => StyledButton({ variant, size, className }), [variant, size, className]);
+
     return (
         <Component {...buttonProps} className={styles} ref={domRef}>
             {children}
