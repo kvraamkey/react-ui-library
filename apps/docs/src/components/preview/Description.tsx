@@ -2,8 +2,8 @@ import { PropsWithChildren } from 'react';
 
 export function Description(props: PropsWithChildren<{}>) {
     return (
-        <section>
-            <h4>Description</h4>
+        <section className='flex flex-col gap-3'>
+            <h4 className='text-xl'>Description</h4>
             {props.children}
         </section>
     );

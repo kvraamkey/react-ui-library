@@ -3,6 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+    ::-webkit-scrollbar-track {
+        box-shadow: none;
+    }
+
+    ::-webkit-scrollbar {
+        background: transparent;
+        position: absolute;
+        width: 2px;
+    }
+
+    ::-webkit-scrollbar:hover {
+        display: block;
+        @apply bg-slate-300;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-slate-300;
+    }
+
+    ::-webkit-scrollbar:horizontal {
+        height: 3px;
+    }
+
     :root {
         --background: 0 0% 100%;
         --foreground: 202 24% 9%;
