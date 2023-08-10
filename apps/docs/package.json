@@ -12,13 +12,16 @@
     "dependencies": {
         "@kvraamkey/core": "workspace:*",
         "@types/node": "^20.4.6",
+        "prism-react-renderer": "^2.0.6",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-highlight": "^0.15.0",
         "react-router-dom": "^6.14.2"
     },
     "devDependencies": {
         "@kvraamkey/eslint-config-custom": "workspace:*",
         "@kvraamkey/tsconfig": "workspace:*",
+        "@types/react-highlight": "^0.12.5",
         "@vitejs/plugin-react": "^4.0.4",
         "autoprefixer": "^10.4.14",
         "eslint": "^7.32.0",
