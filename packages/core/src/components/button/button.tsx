@@ -19,12 +19,12 @@ interface Props extends HTMLUIProps<'button'> {
 export type ButtonProps = Props & Omit<AriaButtonProps, keyof ButtonVariantProps> & ButtonVariantProps;
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-    const { as, children, variant, size, className } = props;
+    const { as, children, color, variant, size, radius, className } = props;
     const Component = as || 'button';
     const domRef = useDOMRef(ref);
 
     let { buttonProps } = useButton(props, domRef);
-    const styles = React.useMemo(() => StyledButton({ variant, size, className }), [variant, size, className]);
+    const styles = React.useMemo(() => StyledButton({ color, variant, size, radius, className }), [color, variant, size, radius, className]);
 
     return (
         <Component {...buttonProps} className={styles} ref={domRef}>

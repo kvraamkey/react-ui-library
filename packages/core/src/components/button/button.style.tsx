@@ -1,25 +1,40 @@
 import { tv } from 'tailwind-variants';
 
 export const StyledButton = tv({
-    base: 'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50',
+    base: 'inline-flex items-center justify-center outline-none border-0 font-medium select-none align-middle min-w-[64px]',
     variants: {
-        variant: {
+        color: {
             default: 'bg-default text-default-foreground shadow hover:bg-default/90',
-            destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
-            outline: 'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
-            secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
-            ghost: 'hover:bg-accent hover:text-accent-foreground',
-            link: 'text-primary underline-offset-4 hover:underline',
+            primary: '',
+            secondary: '',
+            success: '',
+            error: '',
+            info: '',
+            warning: '',
+
+        },
+        variant: {
+            text: 'bg-transparent shadow-none',
+            contained: '',
+            outlined: '',
         },
         size: {
-            default: 'h-9 px-4 py-2',
-            sm: 'h-8 rounded-md px-3 text-xs',
-            lg: 'h-10 rounded-md px-8',
-            icon: 'h-9 w-9',
+            small: '',
+            medium: 'px-4 py-2',
+            large: '',
+            icon: '',
+        },
+        radius: {
+            small: 'rounded',
+            medium: 'rounded-md',
+            large: 'rounded-lg',
+            full: 'rounded-full',
         },
     },
     defaultVariants: {
-        variant: 'default',
-        size: 'default',
+        color: 'default',
+        variant: 'text',
+        size: 'medium',
+        radius: 'medium'
     },
 });
