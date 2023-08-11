@@ -1,9 +1,8 @@
 
 interface PropertiesProps {
     name: string,
-    desc: string,
+    desc?: string,
     type: string,
-    def: string,
 }
 
 export function Properties({ title, props }: { title: string, props: PropertiesProps[] }) {
@@ -27,7 +26,7 @@ export function Properties({ title, props }: { title: string, props: PropertiesP
                             <td className="px-3 py-1 border-r w-60">
                                 <code className="text-pink-600">{prop.type}</code>
                             </td>
-                            <td className="px-3 py-1" dangerouslySetInnerHTML={{ __html: prop.desc }} />
+                            <td className="px-3 py-1" dangerouslySetInnerHTML={{ __html: prop?.desc || '' }} />
                         </tr>
                     ))}
                 </tbody>
