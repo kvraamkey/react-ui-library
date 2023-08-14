@@ -18,7 +18,7 @@ export default () => {
             <PreviewWrapper title="Button" desc="Buttons allow users to take actions, and make choices, with a single tap.">
 
                 <Preview code={codeTemplate(state, (state as any).children)}>
-                    <Button {...state} style={{ transition: 'all .5s ease' }} />
+                    <Button {...state} />
                 </Preview>
 
                 <Description>
@@ -38,27 +38,44 @@ export default () => {
                 <div className="col-span-full">
                     <label htmlFor="color" className="block text-sm font-medium leading-6 text-gray-900 capitalize">color</label>
                     <select name="color" id="color" onChange={(e) => setStateField('color', e.target.value)}>
-                        <option value="primary">Text</option>
-                        <option value="default">Filled</option>
-                        <option value="secondary">Outlined</option>
+                        <option value="default">default</option>
+                        <option value="primary">primary</option>
+                        <option value="secondary">secondary</option>
+                        <option value="success">success</option>
+                        <option value="error">error</option>
+                        <option value="info">info</option>
+                        <option value="warning">warning</option>
                     </select>
                 </div>
                 <div className="col-span-full">
                     <label htmlFor="variant" className="block text-sm font-medium leading-6 text-gray-900 capitalize">variant</label>
                     <select name="variant" id="variant" onChange={(e) => setStateField('variant', e.target.value)}>
-                        <option value="primary">Text</option>
-                        <option value="default">Filled</option>
-                        <option value="secondary">Outlined</option>
+                        <option value="text">Text</option>
+                        <option value="filled">Filled</option>
+                        <option value="outlined">Outlined</option>
                     </select>
                 </div>
                 <div className="col-span-full">
-                    <label htmlFor="radius" className="block text-sm font-medium leading-6 text-gray-900 capitalize">radius</label>
-                    <select name="radius" id="radius" onChange={(e) => setStateField('radius', e.target.value)}>
+                    <label htmlFor="shape" className="block text-sm font-medium leading-6 text-gray-900 capitalize">shape</label>
+                    <select name="shape" id="shape" onChange={(e) => setStateField('shape', e.target.value)}>
+                        <option value="square">square</option>
+                        <option value="rounded">rounded</option>
+                        <option value="circular">circular</option>
+                    </select>
+                </div>
+
+                <div className="col-span-full">
+                    <label htmlFor="size" className="block text-sm font-medium leading-6 text-gray-900 capitalize">size</label>
+                    <select name="size" id="size" onChange={(e) => setStateField('size', e.target.value)}>
                         <option value="small">small</option>
                         <option value="medium">medium</option>
                         <option value="large">large</option>
-                        <option value="full">full</option>
                     </select>
+                </div>
+
+                <div className="col-span-full flex gap-2">
+                    <input type="checkbox" name="isDisabled" id="isDisabled" onChange={(e) => setStateField('isDisabled', e.target.checked)} />
+                    <label htmlFor="isDisabled" className="block text-sm font-medium leading-6 text-gray-900 capitalize">isDisabled</label>
                 </div>
 
                 <div className="col-span-full">
