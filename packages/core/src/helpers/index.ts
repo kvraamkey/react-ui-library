@@ -14,3 +14,5 @@ export function useDOMRef<T extends HTMLElement = HTMLElement>(ref?: RefObject<T
     useImperativeHandle(ref, () => domRef.current);
     return domRef;
 }
+
+export * from './variants';

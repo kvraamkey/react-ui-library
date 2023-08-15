@@ -1,6 +1,6 @@
-import type { MouseEventHandler, Ref } from 'react';
-import type { VariantProps } from 'tailwind-variants';
 import type { AriaButtonProps } from 'react-aria';
+import type { VariantProps } from 'tailwind-variants';
+import type { MouseEventHandler, ReactNode, Ref } from 'react';
 
 import React from 'react';
 import { useButton } from 'react-aria';
@@ -12,7 +12,7 @@ type ButtonVariantProps = VariantProps<typeof StyledButton>;
 
 interface Props extends HTMLUIProps<'button'> {
     ref?: Ref<HTMLButtonElement | null>;
-    children: React.ReactNode;
+    children: ReactNode;
     onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
